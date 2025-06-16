@@ -1,0 +1,46 @@
+.ListWatchItemContainer {
+  display: grid;
+  grid-template-columns: 1fr 1.75fr 1fr 1fr 1.25fr 2fr 1fr 1fr;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+.ListWatchItemContainer img {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.updateWatchItem {
+  background-color: #fff;
+  color: #222;
+}
+.deleteWatchItem {
+  color: #fff;
+  background-color: #222;
+  margin-left: 5px;
+}
+.updateWatchItem,
+.deleteWatchItem {
+  min-width: fit-content;
+  padding: 8px 15px;
+  border: 1px solid #222;
+  border-radius: 20px;
+  text-align: center;
+  scroll-snap-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.updateWatchItem:hover {
+  color: #fff;
+  background-color: #222;
+}
+.deleteWatchItem:hover {
+  background-color: #fff;
+  color: #222;
+}

@@ -1,0 +1,109 @@
+.cartWrapper {
+  position: fixed;
+  top: 5%;
+  bottom: 5%;
+  right: 10%;
+  left: 10%;
+}
+
+.cartContainer {
+  display: flex;
+  gap: 50px;
+}
+
+.cartLeft {
+  width: 70%;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+}
+.cartTitle {
+  margin-top: 10px;
+  padding: 10px 0;
+  font-size: 25px;
+  font-weight: 600;
+  background-color: #ffffff60;
+  backdrop-filter: blur(5px);
+  border-bottom: 1px solid #cccccc70;
+}
+
+.cart {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 100%;
+  height: 100vh;
+}
+.cart::-webkit-scrollbar {
+  display: none;
+}
+
+.cart p {
+  height: 100px;
+  width: 100%;
+  background-color: red;
+  margin-top: 10px;
+}
+
+.total {
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* payment */
+.cartRight {
+  margin-top: 10px;
+  padding: 20px;
+  width: 30%;
+  height: auto;
+  background-color: #ffffff;
+  border-radius: 14px;
+  border: 2px solid #ccc;
+  position: relative;
+}
+
+.cardDetailsTitle {
+  color: #222;
+}
+.cartTotal {
+  margin-top: 50px;
+}
+.cartTotal,
+.deliveryFee,
+.totalAmount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.proceedToCheckoutButton {
+  position: absolute;
+  background-color: #000000;
+  color: #fff;
+  padding: 10px 20px;
+  border: 1px solid #222;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-top: auto;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  margin-top: 20px;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+}
+
+.proceedToCheckoutButton:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.emptyCartMessage {
+  font-size: 18px;
+  color: #555;
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  margin-top: 20px;
+}

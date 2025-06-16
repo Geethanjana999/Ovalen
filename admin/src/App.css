@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oxygen:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oxygen", serif;
+}
+a {
+  color: inherit;
+}
+
+.App {
+  display: flex;
+}
+
+.content {
+  position: fixed;
+  left: 280px; /* Matches the sidebar width */
+  right: 0;
+  padding: 20px;
+  flex: 1;
+  background-color: #fff;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 100vh;
+}

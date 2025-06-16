@@ -1,0 +1,85 @@
+.itemInfoWrapper {
+  margin: 5% 10%;
+}
+.backButton {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: fit-content;
+}
+.backButton i {
+  font-size: 20px;
+}
+.backButton:hover.backButton i {
+  transform: translateX(-5px);
+}
+.itemInfo {
+  display: flex;
+  margin-top: 20px;
+}
+.itemInfoLeft,
+.itemInfoRight {
+  width: 50%;
+}
+.itemInfoRight {
+  padding: 5%;
+}
+.itemInfoLeft img {
+  width: 95%;
+  height: 80vh;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.addToCartBtn {
+  padding: 10px;
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #cccccc65;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 180px;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+.addToCartBtn:hover {
+  transform: scale(1.02);
+}
+
+.itemName {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.itemPrice {
+  font-size: 25px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.inStock,
+.outOfStock {
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 400;
+}
+.inStock {
+  color: rgb(8, 174, 8);
+}
+.outOfStock {
+  color: rgb(179, 0, 0);
+}
+.tags {
+  margin-top: 50px;
+  display: flex;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.tag {
+  color: #222;
+}
+.watchCategory {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #ccc;
+}

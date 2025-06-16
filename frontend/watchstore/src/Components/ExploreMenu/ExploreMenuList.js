@@ -1,0 +1,17 @@
+export const exploreMenuList = [
+  { id: 1, name: "All" },
+  { id: 2, name: "New Arrival" },
+  { id: 3, name: "Modern" },
+  { id: 4, name: "Limited Edition" },
+  { id: 5, name: "Chronographs" },
+  { id: 6, name: "Classic" },
+  { id: 7, name: "Luxury" },
+  { id: 8, name: "Smart Watches" },
+  { id: 9, name: "Sports" },
+  { id: 10, name: "Digital" },
+  { id: 11, name: "Automatic" },
+  { id: 12, name: "Vintage" },
+  { id: 13, name: "Diving Watches" },
+  { id: 14, name: "Pilot Watches" },
+  { id: 15, name: "Skeleton" },
+];

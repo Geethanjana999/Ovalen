@@ -1,0 +1,47 @@
+.menuWrapper {
+  margin-top: 10px;
+}
+
+.menuContainer {
+  display: flex;
+  padding: 5px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+.menulist {
+  display: flex;
+  width: fit-content;
+  overflow-x: scroll;
+  gap: 10px;
+  scroll-snap-type: x mandatory;
+}
+
+.menuItem {
+  min-width: fit-content;
+  padding: 8px 25px;
+  background-color: #fff;
+  border: 1px solid #222;
+  border-radius: 20px;
+  text-align: center;
+  scroll-snap-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.menulist::-webkit-scrollbar {
+  display: none;
+}
+
+.menulist h4 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.active {
+  background-color: #222;
+  color: #fff;
+}

@@ -1,0 +1,96 @@
+/* Sidebar Container */
+.sidebar {
+  width: 280px;
+  height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebarContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Logo Title */
+.logoTitle {
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* Profile Info */
+.profileInfoContainer {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profileName {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.profileEmail {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Navigation Links */
+.profileNavLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-grow: 1;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navItem i {
+  font-size: 20px;
+}
+
+.navItem:hover {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.navItem.active {
+  background-color: #e0e0e0;
+  color: #000;
+}
+
+/* Logout Button */
+.logout {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: auto;
+  background-color: #000000;
+  color: #fff;
+  cursor: pointer;
+}

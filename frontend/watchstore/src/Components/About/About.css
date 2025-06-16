@@ -1,0 +1,21 @@
+.about {
+  margin: 5rem 10%;
+  display: flex;
+  align-items: center;
+}
+
+.aboutLeft,
+.aboutRight {
+  width: 50%;
+}
+
+.aboutTitle {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.AboutParagraph {
+  color: #444;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: justify;
+}

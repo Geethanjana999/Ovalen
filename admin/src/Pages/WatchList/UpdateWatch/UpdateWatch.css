@@ -1,0 +1,15 @@
+.titleAreaWithBackButton {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.bx-chevron-left {
+  font-size: 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.bx-chevron-left:hover {
+  transform: translate(-5px);
+}

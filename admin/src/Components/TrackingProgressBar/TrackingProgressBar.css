@@ -1,0 +1,61 @@
+.tracking-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 25px 0;
+}
+
+.tracking-steps {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+}
+
+.tracking-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 25%;
+}
+
+.tracking-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 400;
+  transition: all 0.3s ease-in-out;
+}
+
+.completed {
+  background-color: #4caf4f;
+  color: white;
+  border: 1px solid #15803d;
+}
+
+.pending {
+  background-color: #f9f9f9;
+  color: #6b7280;
+  border: 1px solid #000000;
+}
+
+.tracking-label {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.bx-check {
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+}

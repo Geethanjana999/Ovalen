@@ -1,0 +1,25 @@
+.outer-container {
+  height: 150vh; /* Simulates a long scrollable page */
+  /* background: green;   */
+  margin-top: 80px;
+}
+
+.sticky-container {
+  position: sticky;
+  top: 70px; /* Sticks to the top of the viewport */
+  padding-bottom: 80px;
+  height: 100vh; /* Fills the viewport */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* border: 2px solid red; */
+}
+
+.scroll-image {
+  width: 80%; /* Adjust size as needed */
+  height: auto;
+  max-width: 80%;
+  transition: transform 0.1s ease-out; /* Smooth scaling effect */
+  border-radius: 20px;
+  object-fit: cover;
+}

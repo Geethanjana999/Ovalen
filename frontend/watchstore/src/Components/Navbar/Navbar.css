@@ -1,0 +1,150 @@
+/* Navbar Container */
+.nav {
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: transparent;
+  transition: background 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+/* Navbar Scroll Effect */
+.nav.scrolled {
+  background: #fff;
+  padding: 3px 10%;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Logo Animation - Shrinks Slightly on Scroll */
+.nav.scrolled .logo {
+  transform: scale(0.9);
+}
+
+/* Logo Title */
+.logoTitle {
+  font-size: 20px;
+  color: #000;
+  font-weight: bold;
+  transition: font-size 0.3s ease-in-out;
+}
+
+.nav.scrolled .logoTitle {
+  font-size: 18px;
+}
+
+/* Navigation Links */
+.navLinks ul {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  font-size: 15px;
+  font-weight: 400;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Move Links Up Slightly when Scrolling */
+.nav.scrolled .navLinks ul {
+  transform: translateY(0px);
+}
+
+/* Move Links Back Down when Scrolling to Top */
+.nav:not(.scrolled) .navLinks ul {
+  transform: translateY(-4px);
+}
+
+/* Navbar Links */
+.navLinks ul li {
+  position: relative;
+}
+
+.navLinks ul li a {
+  color: #000;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+/* Animated Underline */
+.navLinks ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 0%;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.3s ease-in-out;
+}
+
+.navLinks ul li a:hover::after {
+  width: 100%;
+}
+
+/* Auth Section */
+.auth {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Login Button */
+.auth button {
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #000;
+  padding: 6px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Login Button Hover Effect */
+.auth button:hover {
+  background-color: #000000;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Cart & Profile Icons */
+.bx-user,
+.bx-shopping-bag {
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Icon Hover Effect */
+.bx-user:hover,
+.bx-shopping-bag:hover {
+  transform: scale(1.1);
+}
+
+/* Cart Indicator */
+.cartIcon {
+  position: relative;
+}
+
+.cartFull {
+  width: 8px;
+  height: 8px;
+  background-color: rgb(203, 8, 8);
+  border-radius: 50%;
+  position: absolute;
+  top: -4px;
+  right: -4px;
+}

@@ -1,0 +1,22 @@
+.brandsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brandsTitle {
+  margin-top: 5rem;
+  font-size: 8rem;
+  text-align: center;
+}
+.brandsInfo h4 {
+  text-align: center;
+  font-size: 4rem;
+  opacity: 0.5;
+  scale: 1;
+  transition: all 0.3s ease-in-out;
+}
+.brandsInfo h4:hover {
+  opacity: 1;
+  scale: 1.02;
+}

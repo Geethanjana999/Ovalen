@@ -1,0 +1,81 @@
+.largeItemContainer {
+  margin: 0 10%;
+  height: 100%;
+  overflow-x: hidden; /*if you need mouse scroll. use -> auto*/
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+  padding-bottom: 10px;
+}
+
+.LargeItemCardSection {
+  height: 100%;
+  display: flex;
+  overflow-x: scroll;
+  gap: 20px;
+  scroll-snap-type: x mandatory;
+}
+.LargeItemCardSection::-webkit-scrollbar {
+  display: none;
+}
+.LargeItemCard {
+  margin: 5% 10%;
+  background-color: red;
+}
+
+/* Individual card */
+.itemCard {
+  width: 450px;
+  height: 620px;
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.itemCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.itemCard img:hover {
+  transform: scale(1.08);
+}
+
+.scrollbuttonSection {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.scrollButton {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.scrollButton:hover {
+  transform: scale(1.07);
+}
+
+.bx-chevron-left,
+.bx-chevron-right {
+  font-weight: 100;
+  font-size: 30px;
+  transition: all 0.3s ease;
+}
+
+.bx-chevron-right:hover {
+  transform: translateX(5px);
+}
