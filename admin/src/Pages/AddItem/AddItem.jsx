@@ -1,5 +1,5 @@
 import "./AddItem.css";
-import uploadArea from "../assets/uploadArea.png";
+import uploadArea from "../../Assets/uploadArea.png";
 import { useState } from "react";
 import { toast } from "react-toastify";
 import axios from "axios";
